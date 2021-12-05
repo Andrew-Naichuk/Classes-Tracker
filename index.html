@@ -62,7 +62,7 @@ input[type=button] {
     color: white;
     border-style: none;
     margin-top: 10px;
-    padding: 5px 0;
+    padding: 15px 0;
     transition: 0.3s ease-in-out;
 }
 input[type=button]:hover{
@@ -71,24 +71,24 @@ input[type=button]:hover{
 </style>
 
 <div class="container">
-    <input type="button" id="update" value="Добавить занятие">
+    <input type="button" id="update" value="Add language class">
 
     <input type="date" id="date">
-    <label for="date">Дата занятия</label>
+    <label for="date">Class date:</label>
 
     <div class="inputs-block">
     <input type="radio" name="payment" id="paid" checked>
-    <label for="paid">Оплачено</label>
+    <label for="paid">Already paid</label>
 
     <input type="radio" name="payment" id="unpaid">
-    <label for="unpaid">Неоплачено</label>
+    <label for="unpaid">Not paid yet</label>
     </div>
 
     <input type="number" id="price" value="250">
-    <label for="price">Стоимость занятия</label>
+    <label for="price">Class price:</label>
 
     <input type="text" id="client">
-    <label for="client">Клиент</label>
+    <label for="client">Client:</label>
 </div>
 <div class="classes-list">
 

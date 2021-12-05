@@ -65,6 +65,10 @@ btnUpdate.addEventListener('click', () => {
         newClass.price = priceInput.value
         newClass.date = datePicker.value
         postClass(url)
+        window.alert('New class record added!')
+        datePicker.value = ''
+        priceInput.value = 250
+        clientInput.value = ''
     } else {
         window.alert('Fill all the fields first!')
     }
