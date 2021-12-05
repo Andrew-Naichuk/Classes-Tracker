@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<style>
+* {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: sans-serif;
+}
+body {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    box-shadow: 0px 0px 25px rgb(223, 223, 226);
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 15px;
+    min-width: 250px;
+    padding: 20px;
+    border-radius: 5px;
+}
+.classes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.class {
+    flex-direction: column;
+    gap: 5px;
+}
+.paid {
+    background-color: rgb(223, 234, 253);
+}
+.unpaid {
+    background-color: rgb(255, 255, 255);
+}
+.inputs-block {
+    display: flex;
+    justify-content: space-between;
+}
+input {
+    padding: 5px;
+}
+input[type=button] {
+    background-color: rgb(63, 128, 248);
+    color: white;
+    border-style: none;
+    margin-top: 10px;
+    padding: 5px 0;
+    transition: 0.3s ease-in-out;
+}
+input[type=button]:hover{
+    background-color: rgb(61, 180, 201);
+}
+</style>
+
+<div class="container">
+    <input type="button" id="update" value="Добавить занятие">
+
+    <input type="date" id="date">
+    <label for="date">Дата занятия</label>
+
+    <div class="inputs-block">
+    <input type="radio" name="payment" id="paid" checked>
+    <label for="paid">Оплачено</label>
+
+    <input type="radio" name="payment" id="unpaid">
+    <label for="unpaid">Неоплачено</label>
+    </div>
+
+    <input type="number" id="price" value="250">
+    <label for="price">Стоимость занятия</label>
+
+    <input type="text" id="client">
+    <label for="client">Клиент</label>
+</div>
+<div class="classes-list">
+
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
